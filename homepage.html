@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('about-img.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: #000000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin-top: 30px;
+        }
+
+        .btn-card {
+            background-color: #ffffff;
+            border: 1px solid #040404;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .btn-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-card a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .btn-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to My Restaurant App</h1>
+        <div class="btn-container">
+            <div class="btn-card">
+                <span class="btn-icon">&#43;</span>
+                <a href="http://localhost/php_workspace/prog.html">Sign Up</a>
+            </div>
+            <div class="btn-card">
+                <span class="btn-icon">&#128274;</span>
+                <a href="http://localhost/php_workspace/login.html">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
